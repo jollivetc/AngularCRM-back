@@ -1,0 +1,18 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "lastname": "apside",
+        "firstname": "apside",
+        "email": "apside@email.com",
+        "password": "apside"
+      },
+      {
+        "id": 2,
+        "lastname": "Doe",
+        "firstname": "Bob",
+        "email": "bob@email.com",
+        "password": "bob"
+      }
+    ]
+  }
