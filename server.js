@@ -33,7 +33,7 @@ server.post('/auth/login', (req, res) => {
   console.log("got a query auth");
   const {email, password} = req.body
   const user = isAuthenticated({email, password});
-  if (user == false) {
+  if (user == null) {
     const status = 401
     const message = 'Incorrect email or password'
     res.status(status).json({status, message})
