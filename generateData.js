@@ -6,12 +6,12 @@ for (var i=1; i<=200; i++) {
   database.consumers.push({
     id: i,
     civility: faker.random.arrayElement(["Mr", "Mme"]),
-    firstName: faker.name.firstName(),
-    lastName: faker.name.lastName(),
+    firstname: faker.name.firstName(),
+    lastname: faker.name.lastName(),
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
-    createdAt: faker.date.past(),
-    updatedAt: faker.date.recent()
+    createdAt: faker.date.past().getTime(),
+    updatedAt: faker.date.recent().getTime()
   });
 }
 
